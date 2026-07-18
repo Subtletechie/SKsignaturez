@@ -402,6 +402,19 @@ ul { list-style: none; }
 }
 
 .product-card { position: relative; }
+.product-grid-loading,
+.product-grid-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 0;
+  color: var(--light);
+  font-size: 15px;
+}
+.product-desc {
+  font-size: 13px;
+  color: var(--light);
+  margin: 4px 0 8px;
+}
 .product-img-wrap {
   position: relative;
   overflow: hidden;
