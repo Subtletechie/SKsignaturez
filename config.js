@@ -3,7 +3,7 @@
 // by Sanity's CORS origin allow-list and dataset visibility, not secrecy
 // of these values. Fill these in after running `sanity init` in /studio.
 window.SANITY_CONFIG = {
-  projectId: 'YOUR_PROJECT_ID',
+  projectId: 'bwaoqsr5',
   dataset: 'production',
   apiVersion: '2024-01-01',
 };

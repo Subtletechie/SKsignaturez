@@ -8,7 +8,7 @@ export default defineConfig({
   title: 'SirKatchaz Signaturez',
 
   // Filled in after `npx sanity init` — see studio/README.md
-  projectId: 'YOUR_PROJECT_ID',
+  projectId: 'bwaoqsr5',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],
