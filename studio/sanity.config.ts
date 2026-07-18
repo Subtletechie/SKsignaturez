@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'SirKatchaz Signaturez',
+  title: '@sksignaturez',
 
   // Filled in after `npx sanity init` — see studio/README.md
   projectId: 'bwaoqsr5',

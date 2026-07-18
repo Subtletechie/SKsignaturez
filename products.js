@@ -88,7 +88,7 @@ function buildProductCard(product) {
 
   const brand = document.createElement('p');
   brand.className = 'product-brand';
-  brand.textContent = 'SirKatchaz Signaturez';
+  brand.textContent = '@sksignaturez';
   info.appendChild(brand);
 
   const name = document.createElement('h3');
