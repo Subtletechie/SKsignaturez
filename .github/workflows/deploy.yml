@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -26,10 +27,15 @@ jobs:
       - name: Prepare site directory
         run: |
           mkdir -p _site
-          shopt -s extglob
-          cp -r !(studio|_site|.git|.github) _site/
+          rsync -av \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='studio' \
+            --exclude='_site' \
+            --exclude='node_modules' \
+            . _site/
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
